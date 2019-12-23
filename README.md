@@ -16,7 +16,7 @@ int main(void) {
 
 ```
 `Driller` is able to find an input that bypasses the `strncmp`.  However,
-when I pass that crashing input, I get an `IndexError` in `rex`'s `crash.py`:647.
+when I pass that crashing input to `rex`'s `Crash` module, I get an `IndexError` in `rex`'s `crash.py`:647.
 ```
 ~/.virtualenvs/angr/lib/python3.6/site-packages/rex/crash.py in _trace(self, pov_file, format_infos)
     645         if 'crashed' in simgr.stashes:
