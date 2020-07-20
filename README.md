@@ -29,7 +29,7 @@ when I pass that crashing input to `rex`'s `Crash` module, I get an `IndexError`
 ## Steps to reproduce
 ```
 cd /mnt
-gcc -no-pie test.c
+gcc -no-pie -fno-stack-protector test.c
 ./install-driller.sh
 
 ipython3 -i script.py
